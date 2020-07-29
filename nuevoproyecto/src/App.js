@@ -1,28 +1,28 @@
 import React from 'react';
-
+import { withStyles} from '@material-ui/core/styles';
 import './App.css';
 
-import MyForm from './Form';
+
+import CardForm from './Card';
 
 
 
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-
-    <MyForm />
-
- 
+    <div className="app">
 
     
-  
 
-       </div>
+    <CardForm className="cardf" />
+      
+     </div>
   );
     
    
   
 }
 
-export default App;
+export default withStyles({
+  
+}) (App);
